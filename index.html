@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main id="page-content">
+            <h1>Generate a <br><span class="colored-text"> random password</span></h1>
+            <p id="description-txt">Never use an insecure password again</p>
+                <div id="password-setup_parent">
+                    <p class="hint-txt margin-right">Choose your length:</p>
+                    <button id="five-chars" class="length-btn" onclick="chooseFive()">5</button>
+                    <button id="ten-chars" class="length-btn" onclick="chooseTen()">10</button>
+                    <button id="fifteen-chars" class="length-btn" onclick="chooseFifteen()">15</button>
+                </div>
+                
+                <button id="create-pw" onclick="generate()">Generate passwords</button>
+            <div class="divider"></div>
+            <div id="examples-parent">
+                <div class="password-parent">
+                    <div id="password-left" class="pw-field">
+                            <p id="left-password-txt"></p>
+                    </div>
+                    <button id="copy-left_btn" class="copy-hint_btn" onclick="copyPwLeft()">
+                        <img src="assets/copy-icon.svg" class="copy-icon">
+                        <p class="hint-txt">Click here to copy</p>
+                    </button>
+                </div>
+                <div class="password-parent">
+                    <div id="password-right" class="pw-field">
+                        <p id="right-password-txt"></p>
+                    </div>
+                    <button class="copy-hint_btn" onclick="copyPwRight()">
+                        <img src="assets/copy-icon.svg" class="copy-icon" >
+                        <p class="hint-txt">Click here to copy</p>
+                    </button>
+                </div>
+            </div> 
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

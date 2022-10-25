@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url(typefaces/Inter-Regular.otf); 
+}
+
+@font-face {
+    font-family: "karla";
+    font-style: normal;
+    font-weight: 800;
+    src: url(typefaces/Karla-Bold.ttf); 
+}
+
+body {
+    margin: 0;
+    background-color: #ECFDF5;
+    font-family: inter;
+}
+
+
+#password-setup_parent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+#page-content {
+    width: 550px;
+    height: 550px;
+    padding: 52px 115px;
+    margin: auto;
+}
+
+h1 {
+    font-family: karla;
+    color: #2B283A;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -0.055em;
+}
+
+.colored-text {
+    color: #4ADF86;
+}
+
+#description-txt {
+    color: #6B7280;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#create-pw {
+    padding: 9px 16px;
+    background-color: #10B981;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px; 
+    border: none;
+}
+
+.divider {
+    height: 1px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #D5D4D8
+}
+
+#examples-parent {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.pw-field {
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #5DEF92;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.length-btn {
+    font-size: 12px;
+    color: #6B7280;
+    background-color: transparent;
+    border: none; 
+    height: 20px;
+    border-radius: 5px;
+}
+
+.copy-hint_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+.copy-icon {
+    width: 14px;
+    color: #6B7280;
+    margin-right: 6px;
+}
+
+.hint-txt {
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.is-active {
+    background-color: #10B981;
+    color: #ffffff
+}
+
+.hint-txt.margin-right {
+    margin-right: 8px;
+}
