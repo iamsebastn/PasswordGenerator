@@ -18,7 +18,6 @@ function chooseFive() {
     tenCharEl.classList.remove("is-active")
     fifteenCharEl.classList.remove("is-active")
     pwLength.push(fiveCharEl.textContent)
-    console.log(pwLength)
 }
 
 function chooseTen() {
@@ -28,7 +27,6 @@ function chooseTen() {
     fiveCharEl.classList.remove("is-active")
     fifteenCharEl.classList.remove("is-active")
     pwLength.push(tenCharEl.textContent)
-    console.log(pwLength)
 }
 
 function chooseFifteen() {
@@ -38,7 +36,6 @@ function chooseFifteen() {
     fiveCharEl.classList.remove("is-active")
     tenCharEl.classList.remove("is-active")
     pwLength.push(fifteenCharEl.textContent)
-    console.log(pwLength)
 }
 
 

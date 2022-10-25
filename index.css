@@ -60,6 +60,7 @@ h1 {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px; 
     border: none;
+    cursor: pointer;
 }
 
 .divider {
@@ -96,6 +97,7 @@ h1 {
     border: none; 
     height: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .copy-hint_btn {
@@ -105,6 +107,7 @@ h1 {
     margin-top: 4px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .copy-icon {
