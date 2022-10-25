@@ -45,17 +45,21 @@ function chooseFifteen() {
 function generate() {
     let leftPw = characters[Math.floor(Math.random() * characters.length)]
     let rightPw = characters[Math.floor(Math.random() * characters.length)]
+    let errorMsg = "Choose your password length"
+    
     pwLeftEl.textContent = ""
     pwRightEl.textContent = ""
-    
-    for (let i = 0; i < pwLength[0]; i++) {
-        let leftPw = characters[Math.floor(Math.random() * characters.length)]
-        let rightPw = characters[Math.floor(Math.random() * characters.length)]
-        
-        pwLeftEl.textContent += leftPw
-        pwRightEl.textContent += rightPw
-    }
-    pwLength.pop()
+    if (pwLength.length > 0) {
+            for (let i = 0; i < pwLength[0]; i++) {
+            let leftPw = characters[Math.floor(Math.random() * characters.length)]
+            let rightPw = characters[Math.floor(Math.random() * characters.length)]
+            
+            pwLeftEl.textContent += leftPw
+            pwRightEl.textContent += rightPw
+        }
+    } else {
+        return alert(errorMsg)
+    }   
 }
 
 function copyPwLeft() {
